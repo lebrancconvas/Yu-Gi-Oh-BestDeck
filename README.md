@@ -89,3 +89,5 @@ Setup the project by following the steps below.
   - coolstuffinc_price (String)
 
 ## Reference
+
+- [Yu-Gi-Oh! API Guide](https://db.ygoprodeck.com/api-guide/)
