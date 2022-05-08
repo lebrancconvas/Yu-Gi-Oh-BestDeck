@@ -10,6 +10,16 @@ Analyst and Generate the perfect Yu-Gi-Oh! Duel Monster's Deck for you.
 
 - Typescript
 
+### Front-End
+
+- Framework / Library
+  
+  - React
+
+- UI Library
+
+  - Semantic UI
+
 ### Back-End
 
 - Express
