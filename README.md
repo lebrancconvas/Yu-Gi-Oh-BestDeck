@@ -12,11 +12,11 @@ Analyst and Generate the perfect Yu-Gi-Oh! Duel Monster's Deck for you.
 
 ### Front-End
 
-- Framework / Library
+- **Framework / Library**
   
   - React
 
-- UI Library
+- **UI Library**
 
   - Tailwind CSS
 
