@@ -16,7 +16,7 @@ Analyst and Generate the perfect Yu-Gi-Oh! Duel Monster's Deck for you.
 
 ### Data
 
-- Yu-Gi-Oh! API
+- Yu-Gi-Oh! API Data
 
 ## Setup
 
