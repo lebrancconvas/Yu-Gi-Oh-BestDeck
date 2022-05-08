@@ -2,6 +2,8 @@
 
 ## Overview
 
+Analyst and Generate the perfect Yu-Gi-Oh! Duel Monster for you.
+
 ## Tech Stack
 
 ### Programming Language
