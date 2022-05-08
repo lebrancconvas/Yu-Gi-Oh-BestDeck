@@ -17,8 +17,10 @@
         "lodash": "^4.17.21"
     },
     "devDependencies": {
+        "@types/cors": "^2.8.12",
         "@types/express": "^4.17.13",
         "@types/node": "^17.0.31",
+        "cors": "^2.8.5",
         "nodemon": "^2.0.16"
     }
 }
