@@ -58,7 +58,15 @@ Setup the project by following the steps below.
 
 - desc (String)
 
+- *atk (Number)
+
+- *def (Number)
+
+- *level (Number)
+
 - race (String)
+
+- *attribute (String)
 
 - archetype (String)
 
@@ -93,6 +101,8 @@ Setup the project by following the steps below.
   - amazon_price (String)
 
   - coolstuffinc_price (String)
+
+`* In case that's a spell / trap cards, These attrbutes aren't exist.`
 
 ## Reference
 
