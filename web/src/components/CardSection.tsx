@@ -13,10 +13,10 @@ const CardSection: React.FC = () => {
 
 	return(
 		<div>
-			<h1 className="text-white text-2xl">CardSection</h1>
+			<h1 className="text-white text-2xl">Card List</h1>
 			{carddata.map((card: any, index: number) => {
 				return(
-					<div className="text-white" key={index}>
+					<div className="text-white font-mono" key={index}>
 						{card.name}
 					</div>
 				)
