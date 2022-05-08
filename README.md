@@ -36,11 +36,11 @@ Setup the project by following the steps below.
 
   - If you use NPM, Please following the command below for Installing the dependencies.  
  `npm build && npm run dev`
-    - And if you run the command successfully you don't need to use `npm run dev` again you just need to use `npm build` to build the js files. and nodemon will update the server automatically.
+    - And if you run the command successfully you don't need to use `npm run dev` again you just need to use `npm build` to build the js files. and [nodemon](https://github.com/remy/nodemon#nodemon) will update the server automatically.
 
   - If you use Yarn, Please following the command below for Installing the dependencies.  
  `yarn build && yarn dev`
-    - And if you run the command successfully you don't need to use `yarn dev` again you just need to use `yarn build` to build the js files. and nodemon will update the server automatically.
+    - And if you run the command successfully you don't need to use `yarn dev` again you just need to use `yarn build` to build the js files. and [nodemon](https://github.com/remy/nodemon#nodemon) will update the server automatically.
 
 ## API Docs
 
