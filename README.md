@@ -2,7 +2,7 @@
 
 ## Overview
 
-Analyst and Generate the perfect Yu-Gi-Oh! Duel Monster for you.
+Analyst and Generate the perfect Yu-Gi-Oh! Duel Monster's Deck for you.
 
 ## Tech Stack
 
