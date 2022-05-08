@@ -1,9 +1,21 @@
-# Typescript-Project-Template
+# Yu-Gi-Oh! Best Deck
 
-## How to Use
+## Overview
 
-- install git
-- install yarn
-- git clone <https://github.com/lebrancconvas/Typescript-Project-Template.git> $Your-Project-Directory-Name
-- cd $Your-Project-Directory-Name
-- use 'yarn' or 'yarn install'
+## Tech Stack
+
+### Programming Language
+
+- Typescript
+
+### Back-End
+
+- Express
+
+### Data
+
+- Yu-Gi-Oh! API
+
+## Setup
+
+## Reference
