@@ -44,6 +44,10 @@ Setup the project by following the steps below.
 
 ## API Docs
 
+### Amount of Cards (Data Length)
+
+11921
+
 ### Attributes
 
 - id (Number)
