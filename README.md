@@ -67,3 +67,25 @@
   - coolstuffinc_price (String)
 
 ## Reference
+
+Setup the project by following the steps below.
+
+- Clone the repository.
+
+- Install dependencies by using NPM or Yarn depends on yours.
+
+  - If you use NPM, Please following the command below for Installing the dependencies.  
+  `npm install`
+
+  - If you use Yarn, Please following the command below for Installing the dependencies.  
+  `yarn`
+
+- Running in Development Mode. by following the command below.
+
+  - If you use NPM, Please following the command below for Installing the dependencies.  
+ `npm build && npm run dev`
+    - And if you run the command successfully you don't need to use `npm run dev` again you just need to use `npm build` to build the js files. and nodemon will update the server automatically.
+
+  - If you use Yarn, Please following the command below for Installing the dependencies.  
+ `yarn build && yarn dev`
+    - And if you run the command successfully you don't need to use `yarn dev` again you just need to use `npm build` to build the js files. and nodemon will update the server automatically.
