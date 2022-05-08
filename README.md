@@ -18,7 +18,7 @@ Analyst and Generate the perfect Yu-Gi-Oh! Duel Monster's Deck for you.
 
 - UI Library
 
-  - Semantic UI
+  - Tailwind CSS
 
 ### Back-End
 
