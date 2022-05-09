@@ -2,21 +2,7 @@ import React, {useState, useEffect} from 'react';
 import axios, {AxiosResponse} from 'axios';
 import _ from 'lodash';
 
-interface CardData {
-	id: number;
-	name: string;
-	type: string;
-	desc: string;
-	atk?: number;
-	def?: number;
-	level?: number;
-	race: string;
-	attribute?: string;
-	archetype: string;
-	card_sets?: unknown;
-	card_images?: unknown;
-	card_prices?: unknown;
-};
+import CardData from '../lib/Carddata';
 
 const TrapCardSection: React.FC = () => {
 	const [carddata, setCarddata] = useState([]);
