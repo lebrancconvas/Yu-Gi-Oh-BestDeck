@@ -18,11 +18,11 @@ interface CardData {
 	card_prices?: unknown;
 };
 
-const CardSection: React.FC = () => {
+const TrapCardSection: React.FC = () => {
 	const [carddata, setCarddata] = useState([]);
 
 	useEffect(() => {
-		axios.get('http://localhost:3002/api/v1/cards/monster-cards', {headers: {'Content-Type': 'application/'}})
+		axios.get('http://localhost:3002/api/v1/cards', {headers: {'Content-Type': 'application/'}})
 			.then((response: AxiosResponse) => response.data)
 			.then(data => setCarddata(data))
 			.catch(err => console.error(err))
@@ -30,18 +30,15 @@ const CardSection: React.FC = () => {
 
 	return(
 		<div>
-			<h1 className="text-white text-2xl">Card List</h1>
-			{_.slice(carddata, 0, 8).map((card: CardData, index: number) => {
-				if(typeof card !== "undefined") {
-					return(
-						<div className="text-white font-mono" key={index}>
-							{card.name}
-						</div>
-					)
-				}
+			{carddata.filter((card: CardData) => card.type.includes("Trap")).map((card: CardData, index: number) => {
+				return(
+					<div className="text-white font-mono" key={index}>
+						{card.name}
+					</div>
+				)
 			})}
 		</div>
 	);
 };
 
-export default CardSection;
+export default TrapCardSection;
