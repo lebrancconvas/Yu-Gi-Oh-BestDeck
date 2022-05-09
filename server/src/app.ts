@@ -1,5 +1,6 @@
 import express, { Application, Request, Response } from 'express';
 import cors from 'cors';
+import compression from 'compression';
 import router from './controllers/router';
 
 const app: Application = express();
@@ -11,6 +12,7 @@ const corsOptions = {
 }
 
 app.use(express.json());
+app.use(compression());
 app.use(cors(corsOptions));
 app.use(router);
 
