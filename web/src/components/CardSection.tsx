@@ -1,5 +1,22 @@
 import React, {useState, useEffect} from 'react';
 import axios, {AxiosResponse} from 'axios';
+import _ from 'lodash';
+
+interface CardData {
+	id: number;
+	name: string;
+	type: string;
+	desc: string;
+	atk?: number;
+	def?: number;
+	level?: number;
+	race: string;
+	attribute?: string;
+	archetype: string;
+	card_sets?: unknown;
+	card_images?: unknown;
+	card_prices?: unknown;
+};
 
 const CardSection: React.FC = () => {
 	const [carddata, setCarddata] = useState([]);
@@ -14,12 +31,14 @@ const CardSection: React.FC = () => {
 	return(
 		<div>
 			<h1 className="text-white text-2xl">Card List</h1>
-			{carddata.map((card: any, index: number) => {
-				return(
-					<div className="text-white font-mono" key={index}>
-						{card.name}
-					</div>
-				)
+			{_.slice(carddata, 0, 8).map((card: CardData, index: number) => {
+				if(typeof card !== "undefined") {
+					return(
+						<div className="text-white font-mono" key={index}>
+							{card.name}
+						</div>
+					)
+				}
 			})}
 		</div>
 	);
