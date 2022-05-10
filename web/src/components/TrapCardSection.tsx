@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 import axios, {AxiosResponse} from 'axios';
 import _ from 'lodash';
 
-import CardData from '../lib/Carddata';
+import CardData from '../lib/apiDataInterface';
 
 const TrapCardSection: React.FC = () => {
 	const [carddata, setCarddata] = useState([]);
@@ -18,8 +18,10 @@ const TrapCardSection: React.FC = () => {
 		<div>
 			{carddata.filter((card: CardData) => card.type.includes("Trap")).map((card: CardData, index: number) => {
 				return(
-					<div className="text-white font-mono" key={index}>
-						{card.name}
+					<div className="text-white font-mono pb-8" key={index}>
+						<div className="font-bold text-size-2xl">
+							<img src={card.card_images[0].image_url} alt={card.name} />
+						</div>
 					</div>
 				)
 			})}
