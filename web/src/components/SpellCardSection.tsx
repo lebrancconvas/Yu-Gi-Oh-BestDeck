@@ -1,18 +1,11 @@
-import React, {useState, useEffect} from 'react';
-import axios, {AxiosResponse} from 'axios';
+import React from 'react';
+import { useAPI } from '../hooks/useAPI';
 // import _ from 'lodash';
 
 import CardData from '../lib/apiDataInterface';
 
 const SpellCardSection: React.FC = () => {
-	const [carddata, setCarddata] = useState([]);
-
-	useEffect(() => {
-		axios.get('http://localhost:3002/api/v1/cards', {headers: {'Content-Type': 'application/'}})
-			.then((response: AxiosResponse) => response.data)
-			.then(data => setCarddata(data))
-			.catch(err => console.error(err))
-	}, []);
+	const carddata = useAPI('http://localhost:3002/api/v1/cards');
 
 	return(
 		<div>
