@@ -1,6 +1,6 @@
 import React from 'react';
 import { useAPI } from '../hooks/useAPI';
-import _ from 'lodash';
+// import _ from 'lodash';
 
 import ICardData from '../lib/CardData';
 
