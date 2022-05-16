@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
-import CardData from '../lib/apiDataInterface';
+import ICardData from '../lib/CardData';
 import axios, { AxiosResponse } from 'axios';
 
-export const useAPI = (url: string): CardData[] => {
-	const [cardData, setCardData] = useState<CardData[]>([]);
+export const useAPI = (url: string): ICardData[] => {
+	const [cardData, setCardData] = useState<ICardData[]>([]);
 
 	useEffect(() => {
 		axios.get(url)

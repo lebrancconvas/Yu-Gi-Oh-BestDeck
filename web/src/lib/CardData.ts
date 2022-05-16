@@ -1,4 +1,4 @@
-interface CardSet {
+interface ICardSet {
 	set_name: string;
 	set_code: string;
 	set_rarity: string;
@@ -6,13 +6,13 @@ interface CardSet {
 	set_price: string;
 }
 
-interface CardImage {
+interface ICardImage {
 	id: number;
 	image_url: string;
 	image_url_small: string;
 }
 
-interface CardPrice {
+interface ICardPrice {
 	cardmarket_price: string;
 	tcgplayer_price: string;
 	ebay_price: string;
@@ -20,7 +20,7 @@ interface CardPrice {
 	coolstuffinc_price: string;
 }
 
-interface CardData {
+interface ICardData {
 	id: number;
 	name: string;
 	type: string;
@@ -31,9 +31,9 @@ interface CardData {
 	race: string;
 	attribute?: string;
 	archetype: string;
-	card_sets: CardSet[];
-	card_images: CardImage[];
-	card_prices: CardPrice[];
+	card_sets: ICardSet[];
+	card_images: ICardImage[];
+	card_prices: ICardPrice[];
 };
 
-export default CardData;
+export default ICardData;
