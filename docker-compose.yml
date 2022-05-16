@@ -1,0 +1,14 @@
+version: "3.3"
+
+services:
+  web:
+    container_name: web
+    build: ./web
+    ports:
+      - "3000:3000"
+  
+  server:
+    container_name: server
+    build: ./server
+    ports:
+      - "3002:3002"
