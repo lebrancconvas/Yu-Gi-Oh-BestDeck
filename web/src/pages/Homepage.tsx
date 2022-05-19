@@ -1,5 +1,6 @@
 import React from 'react';
 import '../App.css';
+import CardSearch from '../components/CardSearch';
 import MonsterCardSection from '../components/MonsterCardSection';
 import SpellCardSection from '../components/SpellCardSection';
 import TrapCardSection from '../components/TrapCardSection';
@@ -8,9 +9,13 @@ import TrapCardSection from '../components/TrapCardSection';
 const Homepage: React.FC = () => {
 	return(
 		<div className="App">
-			<h1 className="text-white text-3xl font-bold">Yu-Gi-Oh! The Best Deck</h1>
+			<h1 className="text-white text-3xl font-bold">Yu-Gi-Oh! The Best Deck</h1> 
 
 			<hr />
+
+			<CardSearch />
+
+			<hr /> 
 
 			<div className="grid grid-cols-3">
 				<div>

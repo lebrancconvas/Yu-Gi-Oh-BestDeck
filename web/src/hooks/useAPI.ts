@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import ICardData from '../lib/CardData';
+import ICardData from '../lib/carddata.interface';
 import axios, { AxiosResponse } from 'axios';
 
 export const useAPI = (url: string): ICardData[] => {
